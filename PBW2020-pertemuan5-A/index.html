@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="a.jpg" class="foto"> <!--menambah gambar-->
+      <div class="kepala">
+        <div class="tulis">
+          <p class="gaya">
+            Halaman Pendaftaran
+          </p>
+          <p class="gaya-gayaan">
+            Pendaftaran sebagai peserta dalam RAKERWIL (Rapat Kerja Wilayah) Bali dan Nusa Tenggara 2020
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="index.html" method="post" enctype="multipart/form-data">
+        <div class="form-container">
+          <!--membuat form -->
+          <div class="row">
+            <div class="line">
+              <input type="text" name="lengkap" id="inputlengkap" class="input" placeholder="Nama Lengkap" >
+            </div>
+            <div class="line">
+              <input type="text" name="panggilan" id="inputpanggilan" class="input" placeholder="Nama Panggilan" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="line">
+              <input type="number" name="nomor" id="inputnomor" class="input" placeholder="No.Telepon" > <!--membuat form dengan tipe nomor-->
+            </div>
+            <div class="line">
+              <input type="email" name="email" id="inputemail" class="input" placeholder="Email" > <!--membuat form dengan tipe email-->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="line">
+              <input type="text" onfocus="(this.type='Date')" name="lahir" id="inputlahir" class="input" placeholder="Tanggal Lahir" > <!--membuat form dengan tipe text namun jika diklik user bisa langsung meninputkan tanggalnya -->
+            </div>
+            <div class="line">
+              <input type="text" name="tempat" id="inputtempat" class="input" placeholder="Tempat Lahir" >
+            </div>
+            <div class="line">
+              <select name="agama" id="inputagama" class="input"> <!--membuat yang list pilihan dengan tags select-->
+                <option value="">Agama</option>
+                <option value="Budha">Budha</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Islam">Islam</option>
+                <option value="Katholik">Katholik</option>
+                <option value="Protestan">Protestan</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="line">
+              <input type="text" name="universitas" id="inputuniversitas" class="input" placeholder="Universitas" >
+            </div>
+            <div class="line">
+              <input type="text" name="fakultas" id="inputfakultas" class="input" placeholder="Fakultas/Jurusan" >
+            </div>
+            <div class="line">
+              <input type="text" name="jabatan" id="inputjabatan" class="input" placeholder="Jabatan" >
+            </div>
+          </div>
+            <div class="line">
+            <input type="text" name="alamat" id="inputalamat" class="input" placeholder="Alamat Asal" >
+          </div>
+
+          <br />
+          <div class="row">
+            <div class="line">
+              <label for="almamater" class="style"> <!--membuat form dengan tipe file sehingga 
+                bisa mengupload dukumen yang diinginkan-->
+                Foto Almamater
+              </label>
+              <input type="file" name="almamater" id="inputalmamater" class="style-form">
+            </div>
+            <div class="line">
+              <label for="ktp" class="style">
+                Scan KTP
+              </label>
+              <input type="file" name="ktp" id="inputktp" class="style-form">
+            </div>
+            <div class="line"></div>
+          </div>
+          <button type="submit" class="button"> <!--membuat tombol dengan tags button-->
+            Daftar
+          </button>
+
+        </div>
+       </form>
+    </div>
+  </body>
+</html>

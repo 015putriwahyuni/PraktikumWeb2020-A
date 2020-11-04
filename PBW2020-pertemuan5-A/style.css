@@ -1,0 +1,101 @@
+.container{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+ .foto{
+    transform: scaleX(-1); /*mengatur gambar dangan memberi jarak */
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    
+ }
+
+ .kepala{
+    position: absolute; /*mengatur tulisan agar bisa muncul diatas gamabar */
+    padding: 15px 15px;
+    margin: 0;
+    bottom: 25%;
+    left: 8rem;
+ }
+
+ /*mengatur posisi tulisan yang ada gambar*/
+ .tulis{
+    line-height: 0.2;
+ }
+/*mengatur tulisan pada gambar */
+ .gaya{ 
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+ }
+
+ .gaya-gayaan{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+ }
+
+ .form-container{
+    margin: 5px 8rem;
+ }
+ /*untuk memanipulasi item-item yang ada didalamnya, 
+ merubah tinggi dan lebar, urutan posisi elemen, dan spasi (jarak) diantara elemen*/
+ .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px; /*mengatur jarak masing2 form*/
+ }
+
+ .line{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    margin-left: 5px;
+    margin-right: 5px;
+ }
+ 
+ .input{
+    font-family: arial;
+    font-size: 13px;
+    display: block;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    color: #373d44;
+    background-color: #fff;
+    padding: 0.375rem 0.75rem;
+ }
+
+ .style{
+    font-family: arial;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 240;
+ }
+
+ .style-form{
+    font-family: arial;
+    font-size: 12px;
+    color: #373d44;
+    padding: 0.3rem 0;
+ }
+
+/*pengaturan tombol daftar*/
+ .button{
+    text-align: center;
+    border-radius: 4px;
+    width: auto;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    background-color: #4BB543;/*pengaturan warna pada tombol daftar*/
+    color: white;
+ }
+
+
