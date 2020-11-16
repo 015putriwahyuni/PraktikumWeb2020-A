@@ -1,0 +1,61 @@
+body{
+	background: #F2F2F2;
+	font-family: sans-serif;
+}
+
+.kalkulator{
+	width: 335px;
+	background: #2F495A;
+	margin: 100px auto;
+	padding: 10px 20px 50px 20px;
+	border-radius: 5px;
+	box-shadow: 15px 15px 15px 15px #8593a6;
+}
+
+.bil{
+	width: 300px;
+	margin: 5px;
+	border: none;
+	font-size: 16pt;
+	border-radius: 5px;
+	padding: 10px;	
+}
+
+
+.tombol2{
+	width: 335px;
+	background: #EC5159;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-top: 5pt;
+	color: #eee;
+	font-size: 25pt;
+	border-bottom:4px solid #BF3D3D;
+}
+
+.tombol {
+    border: 1px solid #54a4f0;        /* border: tebal[px] tipe[solid,dashed,dotted] warna[#hex, rgb()]; */
+    background-color: #54a4f0;        /* ubah warna background */
+    color: #FFFFFF;                   /* ubah warna font */
+    font-size: 20px;                  /* ubah ukuran font */
+    width: 80px;                     /* set panjang button. ukuran width = ukuran height */
+    height: 80px;                    /* set tinggi button. ukuran width = ukuran height */
+    line-height: 16px;                /* set line height = font size */
+    text-align: center;               /* text posisi center */
+    border-radius: 50%;               /* set radius sudut pada button */
+}
+.tombol:hover {
+    opacity: 0.8;                     /* ubah tingkat transparansi saat cursor menuju button. 0.0 s.d 1.0 */
+}
+.tombol:active {
+    background: #550000;              /* ubah background saat button ditekan */
+}
+
+.judul{
+	text-align: center;
+	color: #eee;
+	font-weight: normal;
+}

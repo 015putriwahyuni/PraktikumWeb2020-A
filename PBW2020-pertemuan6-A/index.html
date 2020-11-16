@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' type='image/x-icon' href='assets/favicon.png' />
+   	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<title>Membuat Kalkulator Sederhana dengan javascript</title>
+
+</head>
+<body>
+	
+	<div class="kalkulator">
+		<h2 class="judul">KALKULATOR</h2>
+		<hr style="max-width: 50vw;">
+		<form method="post">
+		<!--input bilangan pertama dan kedua-->			
+			<input type="text" id="input1" name="bil1" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Pertama">
+			<input type="text" id="input2" name="bil2" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Kedua">
+			<input class="bil" id="hasil" type="text" placeholder="Hasil" readonly>		<!--menampilkan hasil perhitungan-->			
+		</form>
+		<!--setiap menekan tombol akan diproses dan memanggil fungsi yang ada pada proses.js-->	
+		<button class="tombol" onclick="kali()">X</button> 
+		<button class="tombol" onclick="tambah()">+</button>
+		<button class="tombol" onclick="kurang()">-</button>
+		<button class="tombol" onclick="bagi()">/</button>
+		<form >
+         	<button id="myForm" class="tombol2" onclick="myFunction()">RESET</button> <!--setelah di klik akan memanggil fungsi myfunction() dan mereset perhitungan-->	
+        </form>
+		
+	</div>
+	<div style="font-size:1rem; display: flex; align-items: center; justify-content: center;">
+		Made with <img style="margin: 0.15rem;" src="assets/love.png">by
+		<a style="text-decoration: none; color:#335480; margin-left: 0.25rem;">@pcs_wy</a>
+    </div>
+	<hr style="max-width: 50vw;">
+	<script src="assets/proses.js"></script> <!--memanggil proses.js-->	
+</body>
+</html>
