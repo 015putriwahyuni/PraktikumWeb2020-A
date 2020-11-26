@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    session_start(); //fungsi ini ditempatkan diawal halaman yang akan di gunakan, sehigga session session dibawahnya bisa dibaca oleh server.
     if (!isset($_SESSION["bdata"])) {
         $_SESSION["bdata"] = 0; //dimana data nilai awal 0
     }
