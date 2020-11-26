@@ -9,14 +9,46 @@
 
 <?php
 
-    if (isset($_POST["submit"])) { //masukkam data dalam session, data akan disimpan pada session
-        $index = $_SESSION["bdata"];
-        $_SESSION["nim"][$index] = $_POST["nim"];
-        $_SESSION["nama"][$index] = $_POST["nama"];
-        $_SESSION["nilai1"][$index]= intval($_POST["nilai1"]); //fungsi intval memberikan nilai bertipe integer
-        $_SESSION["nilai2"][$index] = intval($_POST["nilai2"]);
-        $_SESSION["bdata"] += 1;
+      //masukkam data dalam session, data akan disimpan pada session
+    if (isset($_POST["submit"])) {
+      
+
+        if (empty($_POST["nim"])) { //jika data masih ada yang kosong akan kembali ke halaman index.php, dan menampilkan massage
+            echo "<script>alert('NIM masih kosong!'); 
+            window.history.back(); </script>";
+            die;
            
+        }
+
+        if (empty($_POST["nama"])) { //jika data masih ada yang kosong akan kembali ke halaman index.php, dan menampilkan massage
+            echo "<script>alert('Nama masih kosong!'); 
+            window.history.back(); </script>";
+            die;
+           
+        }
+
+        if (empty($_POST["nilai1"])) {  //jika data masih ada yang kosong akan kembali ke halaman index.php, dan menampilkan massage
+            echo "<script>alert('Nilai masih kosong!'); 
+            window.history.back(); </script>";
+            die;
+           
+        }
+
+        if (empty($_POST["nilai2"])) { //jika data masih ada yang kosong akan kembali ke halaman index.php, dan menampilkan massage
+            echo "<script>alert('Nilai masih kosong!'); 
+            window.history.back(); </script>";
+            die;
+           
+        }
+            $index = $_SESSION["bdata"];   //jika data sudah lengkap
+            $_SESSION["nim"][$index] = $_POST["nim"];
+            $_SESSION["nama"][$index] = $_POST["nama"];
+            $_SESSION["nilai1"][$index]= intval($_POST["nilai1"]); //fungsi intval memberikan nilai bertipe integer
+            $_SESSION["nilai2"][$index] = intval($_POST["nilai2"]);
+            $_SESSION["bdata"] += 1; //data akan terus bertambah 1
+        
+           
+        
     }
 
 ?>
